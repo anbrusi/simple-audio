@@ -1,0 +1,17 @@
+{
+	"plugins": [
+		{
+			"name": "Simple audio",
+			"className": "SimpleAudio",
+			"description": "Adds text to the editor.",
+			"path": "src/simpleaudio.js",
+			"uiComponents": [
+				{
+					"name": "simpleAudioButton",
+					"type": "Button",
+					"iconPath": "theme/icons/ckeditor.svg"
+				}
+			]
+		}
+	]
+}
