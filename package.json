@@ -53,13 +53,15 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "stylelint": "^13.13.1",
-    "stylelint-config-ckeditor5": ">=4.1.1"
+    "stylelint-config-ckeditor5": ">=4.1.1",
+    "webpack-cli": "^5.0.1"
   },
   "scripts": {
     "dll:build": "ckeditor5-package-tools dll:build",
     "dll:serve": "http-server ./ -o sample/dll.html",
     "lint": "eslint \"**/*.js\" --quiet",
     "start": "ckeditor5-package-tools start",
+    "build": "webpack --mode production",
     "stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css'",
     "test": "ckeditor5-package-tools test",
     "prepare": "yarn run dll:build",

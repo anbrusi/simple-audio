@@ -1,6 +1,20 @@
 @anbrusi/ckeditor5-simple-audio
 ===============================
 
+Created with ckeditor5-package-generator. For the original README check the end of this text.
+
+The sample differs from the original sample and is not compatible with it.
+The start script can no longer be used. Use the build script instead. The result is not self contained,
+but generates a file 'sample-ckeditor.js', which is a CKEditor5 classic-editor to use with index.php,
+served by a http server like apache, enabled for PHP. 
+The reason is to offer an implementation of the server part of SimpleUploadAdapter, necessary for a working sample.
+
+If You use this plugin, make certain to include SimpleUploadAdapter in your editor and to provide
+an appropriate server part.
+
+Original README
+===============
+
 This package was created by the [ckeditor5-package-generator](https://www.npmjs.com/package/ckeditor5-package-generator) package.
 
 ## Table of contents
