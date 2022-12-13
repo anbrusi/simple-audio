@@ -11,7 +11,11 @@
     "ckeditor5-dll",
     "ckeditor5-package-generator"
   ],
-  "main": "src/index.js",
+  "main": "src/simpleaudio.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anbrusi/simple-audio"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0",
@@ -19,9 +23,10 @@
   },
   "files": [
     "lang",
-    "src",
-    "theme",
+    "src/*",
+    "theme/*",
     "build",
+    "sample/*",
     "ckeditor5-metadata.json"
   ],
   "dependencies": {
@@ -58,10 +63,8 @@
   },
   "scripts": {
     "lint": "eslint \"**/*.js\" --quiet",
-    "start": "ckeditor5-package-tools start",
     "build": "webpack --mode production",
     "stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css'",
-    "test": "ckeditor5-package-tools test",
     "translations:collect": "ckeditor5-package-tools translations:collect",
     "translations:download": "ckeditor5-package-tools translations:download",
     "translations:upload": "ckeditor5-package-tools translations:upload"

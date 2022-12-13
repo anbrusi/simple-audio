@@ -3,7 +3,7 @@
 		{
 			"name": "Simple audio",
 			"className": "SimpleAudio",
-			"description": "Adds text to the editor.",
+			"description": "Adds HTML 5 audio to the editor.",
 			"path": "src/simpleaudio.js",
 			"uiComponents": [
 				{
