@@ -3,14 +3,17 @@
 
 Created with ckeditor5-package-generator. For the original README check the end of this text.
 
-The sample differs from the original sample and is not compatible with it.
-The start script can no longer be used. Use the build script instead. The result is not self contained,
-but generates a file 'sample-ckeditor.js', which is a CKEditor5 classic-editor to use with index.php,
-served by a http server like apache, enabled for PHP. 
-The reason is to offer an implementation of the server part of SimpleUploadAdapter, necessary for a working sample.
+To include this plugin in a build of classic editor proceed as follows:
 
-If You use this plugin, make certain to include SimpleUploadAdapter in your editor and to provide
-an appropriate server part.
+1. Load the plugin using "npm install https://github.com/anbrusi/simple-audio"
+2. Import the plugin in the script used to build a classic editor i.e. src/ckeditor.js by "import SimpleAudio from '@anbrusi/ckeditor5-simple-audio';"
+3. Add "SimpleAudio" to the array ClassicEditor.builtinPlugins
+4. Ass "simpleAudioButton" to the array Classiceditor.defaultConfig.toolbar.items. Note the misnomer. It is simpleAudioButton and not simpleAudio!
+5. Buid the classic editor using the same webpack.config,js used in @ckeditor/ckeditor5-build-classic in the original monorepo of ckeditor5 i.e. "https://github.com/ckeditor/ckeditor5.git"
+
+The two files index.php and imageUpload.php in the sample subdirectory can be used to test the result of a build of classsic editor, including SimpleAudio.
+"imageUpload.php" is the sever part of the simpleUploadAdapter used for uploading images as well as audios. Modify it to suit Your directory structure.
+"index.php" is the startfile for a test of the classic editor instance, with simpleAudio
 
 Original README
 ===============
